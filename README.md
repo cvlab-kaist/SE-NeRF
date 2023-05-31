@@ -1,1 +1,1 @@
-# DäRF: Boosting Few-shot Neural Radiance Field with Joint Monocular Depth Adaptation
+# SE-NeRF: Self-Evolving Neural Radiance Fields
