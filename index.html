@@ -219,10 +219,11 @@
                 <div class="text-justify">
                     To validate our framework, we show the resulting PSNR values of the rendered images from <span>360&deg;</span> after being trained with 3 images from <span>0&deg;</span>, <span>120&deg;</span>, and <span>240&deg;</span>. We observe that the quality of rendered images drops sharply despite a minor change in viewpoints due to extreme overfitting to sparse input views and show that this problem can be circumvented by applying the self-training framework to NeRF.
                     <br>
-                    <b>Baseline</b>: Trained with 3 images with the baseline model. 
+                    <b>Baseline</b>: Trained with 3 images with the baseline model.
+                    <br>
                     <b>GT Reliability Mask</b>: Trained with 3 images with self-supervised training applied with ground-truth reliability mask.
+                    <br>
                     <b>Ours(SE-NeRF)</b>: Trained with 3 images with our proposed self-supervised framework with no ground-truth information. 
-                    <br><br>
                 </div>
                 <div class="text-center">
                     <img src="./img/motivation_local.png" width="80%">
