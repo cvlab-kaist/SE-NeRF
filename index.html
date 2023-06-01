@@ -123,7 +123,7 @@
                             </a>
                         </li>                          -->
                         <li>
-                            <a href="https://github.com/KU-CVLAB/DaRF" target="_blank">
+                            <a href="https://github.com/KU-CVLAB/SE-NeRF" target="_blank">
                             <image src="img/github.png" height="60px">
                                 <h4><strong>Code</strong></h4>
                             </a>
@@ -152,7 +152,7 @@
                     Abstract
                 </h3>
                 <p class="text-justify">
-                    Neural radiance field (NeRF) shows powerful performance in novel view synthesis and 3D geometry reconstruction, but it suffers from critical performance degradation when the number of known viewpoints is drastically reduced. Existing works attempt to overcome this problem by employing external priors, but their success is limited to certain types of scenes or datasets. Employing monocular depth estimation (MDE) networks, pretrained on large-scale RGB-D datasets, with powerful generalization capability may be a key to solving this problem: however, using MDE in conjunction with NeRF comes with a new set of challenges due to various ambiguity problems exhibited by monocular depths. In this light, we propose a novel framework, dubbed DäRF, that achieves robust NeRF reconstruction with a handful of real-world images by combining the strengths of NeRF and monocular depth estimation through online complementary training. Our framework imposes the MDE network's powerful geometry prior to NeRF representation at both seen and unseen viewpoints to enhance its robustness and coherence. In addition, we overcome the ambiguity problems of monocular depths through patch-wise scale-shift fitting and geometry distillation, which adapts the MDE network to produce depths aligned accurately with NeRF geometry. Experiments show our framework achieves state-of-the-art results both quantitatively and qualitatively, demonstrating consistent and reliable performance in both indoor and outdoor real-world datasets.
+                    Recently, Neural Radiance Field (NeRF) has shown remarkable performance in 3D reconstruction. However, it still requires abundant high-quality images limiting its applicability in real-world scenarios. To overcome this limitation, recent works have focused on training NeRF with sparse viewpoints. We observe that the quality of rendered images drops sharply despite a few changes in viewpoints due to extreme overfitting to sparse input views. In this paper, we propose a novel framework, SE-NeRF, that applies self-supervised training to NeRF to address these problems. We formulate few-shot NeRF into a teacher-student framework commonly used in self-training for iterative distillation of robust geometry. We introduce a novel reliability estimation method to determine the reliability of pseudo labels obtained by the teacher network, which we proceed to leverage in our distillation process. Our approach distills ray-level pseudo labels using separate distillation schemes for reliable and unreliable rays, enabling NeRF to learn more accurate and robust geometry of the 3D scene. We evaluate our framework qualitatively and quantitatively, which achieves state-of-the-art performance through self-supervision, without relying on external 3D priors for additional guidance, demonstrating the effectiveness of our approach in a few-shot NeRF setting.
                 </p>
             </div>
         </div>
