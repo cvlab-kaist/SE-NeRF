@@ -140,7 +140,7 @@
                 </div>
 
                 <div class="text-justify">
-                    Unlike existing work (SCADE [CVPR'23]) that distills depths by pretrained MDE to NeRF at seen view only, our DäRF fully exploits the ability of MDE by jointly optimizing NeRF and MDE at a specific scene, and distilling the monocular depth prior to NeRF at both seen and unseen views.
+                    SE-NeRF utilizes the teacher-student framework to distill the knowledge of learned 3D geometry from teacher to student. To do this, we apply a separate distillation scheme for reliable and unreliable rays. The process is done in an iterative manner as the student becomes the new teacher.
                 </div>
             </div>
         </div>
