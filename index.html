@@ -163,24 +163,17 @@
                     Qualitative Results
                 </h3>
                 <div class="text-justify">
-                    Qualitative results of on ScanNet with <b>18 - 20 input view</b>.
+                    Qualitative results of on Synthetic Dataset with randomly selected <b>3 input views</b>.
                 </div>
                 <div class="text-center">
                     <img src="./img/Scannet_standard_qual.png" width="100%">
                 </div>
                 <br>
                 <div class="text-justify">
-                    Qualitative results of on ScanNet with <b>9 - 10 input views</b>.
+                    Qualitative results of on LLFF Dataset with randomly selected <b>3 input views</b>.
                 </div>
                 <div class="text-center">
                     <img src="./img/Scannet_extreme_qual.png" width="100%">
-                </div>
-                <br>
-                <div class="text-justify">
-                    Qualitative results of on Tanks and Temples with <b>10 input views</b>.
-                </div>
-                <div class="text-center">
-                    <img src="./img/TnT-qual.png" width="100%">
                 </div>
             </div>
         </div>
@@ -191,7 +184,7 @@
                     Quantitative Results
                 </h3>
                 <div class="text-justify">
-                    The best-performing results are presented in <b>bold</b>, while the second-best results are <u>underlined</u>. 
+                    The best-performing results are presented in <b>bold</b>. 
                 </div>
                 <div class="text-center">
                     <img src="./img/main_qual_nerf.png" width="100%">
@@ -221,10 +214,10 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    Motivation of Patch-wise Adjustment
+                    Motivation of Self-Supervised Training
                 </h3>
                 <div class="text-justify">
-                    To validate our framework, we show visualization of the effectiveness of patch-wise scale and shift adjustment, compared to image-level adjustment
+                    To validate our framework, we show the resulting PSNR values of the rendered images from 360<span>&#x2218;</span> after being trained with 3 images from 0<span>&#x2218;</span>, 120<span>&#x2218;</span>, and 240<span>&#x2218;</span>. We observe that the quality of rendered images drops sharply despite a minor change in viewpoints due to extreme overfitting to sparse input views when using.
                     <b>(a)</b>: monocular depth with image-level adjustment, 
                     <b>(b)</b>: monocular depth with patch-level adjustment, and 
                     <b>(c)</b>: rendered depth by NeRF trained with patch-level adjustment. 
