@@ -61,23 +61,23 @@
         </div>
         <div class="row" id="author-row" style="margin:0 auto;">
             <div class="col-md-12 text-center" style="display: table; margin:0 auto">
-                <a style="text-decoration:none" href="https://uhnjiny.github.io/daaarf/">
+                <a style="text-decoration:none" href="https://github.com/crepejung00">
                     Jaewoo&nbsp;Jung*
                 </a>
                 <span style="padding-left: 20px;"></span>
-                <a style="text-decoration:none" href="https://uhnjiny.github.io/daaarf/">
+                <a style="text-decoration:none" href="https://github.com/ONground-Korea">
                     Jisang&nbsp;Han*
                 </a>
                 <span style="padding-left: 20px;"></span>
-                <a style="text-decoration:none" href="https://uhnjiny.github.io/daaarf/">
+                <a style="text-decoration:none" href="https://github.com/loggerJK">
                     Jiwon&nbsp;Kang*
                 </a>
                 <br>
-                <a style="text-decoration:none" href="https://seokju-cho.github.io/">
+                <a style="text-decoration:none" href="https://github.com/deep-overflow">
                     Seongchan&nbsp;Kim
                 </a>
                 <span style="padding-left: 20px;"></span>
-                <a style="text-decoration:none" href="https://uhnjiny.github.io/daaarf/">
+                <a style="text-decoration:none" href="https://github.com/mskwak01">
                     Min-Seop&nbsp;Kwak
                 </a>
                 <span style="padding-left: 20px;"></span>
@@ -219,10 +219,9 @@
                 <div class="text-justify">
                     To validate our framework, we show the resulting PSNR values of the rendered images from <span>360&deg;</span> after being trained with 3 images from <span>0&deg;</span>, <span>120&deg;</span>, and <span>240&deg;</span>. We observe that the quality of rendered images drops sharply despite a minor change in viewpoints due to extreme overfitting to sparse input views and show that this problem can be circumvented by applying the self-training framework to NeRF.
                     <br>
-                    <b>(a)</b>: monocular depth with image-level adjustment, 
-                    <b>(b)</b>: monocular depth with patch-level adjustment, and 
-                    <b>(c)</b>: rendered depth by NeRF trained with patch-level adjustment. 
-                    For visualization, depth maps are unprojected into 3D space. The proposed patch-wise adjustment helps to minimize the errors caused by inconsistency in depth differences among objects.
+                    <b>Baseline</b>: Trained with 3 images with the baseline model. 
+                    <b>GT Reliability Mask</b>: Trained with 3 images with self-supervised training applied with ground-truth reliability mask.
+                    <b>Ours(SE-NeRF)</b>: Trained with 3 images with our proposed self-supervised framework with no ground-truth information. 
                     <br><br>
                 </div>
                 <div class="text-center">
