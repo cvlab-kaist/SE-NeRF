@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html>
+
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <title>SE-NeRF</title>
@@ -19,7 +22,8 @@
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="SE-NeRF: Self-Evolving Neural Radiance Fields">
-    <meta name="twitter:description" content="Existing works on open-vocabulary semantic segmentation have utilized large-scale vision-language models, such as CLIP, to leverage their exceptional open-vocabulary recognition capabilities. However,  the problem of transferring these capabilities learned from image-level supervision to the pixel-level task of segmentation and addressing arbitrary unseen categories at inference makes this task challenging. To address these issues, we aim to attentively relate objects within an image to given categories by leveraging relational information among class categories and visual semantics through aggregation, while also adapting the CLIP representations to the pixel-level task. However, we observe that direct optimization of the CLIP embeddings can harm its open-vocabulary capabilities. In this regard, we propose an alternative approach to optimize the image-text similarity map, i.e. the cost map, using a novel cost aggregation-based method. Our framework, namely CAT-Seg, achieves state-of-the-art performance across all benchmarks. We provide extensive ablation studies to validate our choices.">
+    <meta name="twitter:description"
+        content="Existing works on open-vocabulary semantic segmentation have utilized large-scale vision-language models, such as CLIP, to leverage their exceptional open-vocabulary recognition capabilities. However,  the problem of transferring these capabilities learned from image-level supervision to the pixel-level task of segmentation and addressing arbitrary unseen categories at inference makes this task challenging. To address these issues, we aim to attentively relate objects within an image to given categories by leveraging relational information among class categories and visual semantics through aggregation, while also adapting the CLIP representations to the pixel-level task. However, we observe that direct optimization of the CLIP embeddings can harm its open-vocabulary capabilities. In this regard, we propose an alternative approach to optimize the image-text similarity map, i.e. the cost map, using a novel cost aggregation-based method. Our framework, namely CAT-Seg, achieves state-of-the-art performance across all benchmarks. We provide extensive ablation studies to validate our choices.">
     <!-- <meta name="twitter:image" content="img/cats.png"> -->
 
 
@@ -42,11 +46,11 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVFM103BVF"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-QVFM103BVF');
+    gtag('config', 'G-QVFM103BVF');
 </script>
 
 <body>
@@ -84,7 +88,7 @@
                 <a style="text-decoration:none" href="https://cvlab.korea.ac.kr">
                     Seungryong&nbsp;Kim
                 </a>
-		<table class="author-table" id="author-table">
+                <table class="author-table" id="author-table">
                     <tr>
                         <td>
                             Korea University
@@ -100,47 +104,115 @@
     <script>
         document.getElementById('author-row').style.maxWidth = document.getElementById("-row").clientWidth + 'px';
     </script>
+
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div>
+                    <video class="video" id="Teaser" width="50%" loop playsinline autoPlay muted
+                        src="./img/kplanes_ours.mp4" onplay="resizeAndPlay(this)"></video>
+                    <canvas width="150" height="150" class="videoMerge" id="TeaserMerge"></canvas>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <video class="video" id="0758" width="50%" loop playsinline autoPlay muted
+                        src="./img/regnerf_ours.mp4" onplay="resizeAndPlay(this)"></video>
+                    <canvas width="150" height="150" class="videoMerge" id="0758Merge"></canvas>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div>
+                    <video class="video" id="0781" width="33%" loop playsinline autoPlay muted
+                        src="./img/ours_chair.mp4" onplay="resizeAndPlay(this)"></video>
+                    <canvas width="150" height="150" class="videoMerge" id="0781Merge"></canvas>
+                </div>
+            </div>
+            <div class="text-justify">
+                Our results on chair scene of NeRF Synthetic with 3 input view. We provide video comparison with our
+                baseline, K-planes.
+            </div>
+        </div>
+    </div> -->
+
     <div class="container" id="main">
         <div class="row">
-                <div class="col-sm-6 col-sm-offset-3 text-center">
-                    <ul class="nav nav-pills nav-justified">
-                        <li>
-                            <a href="https://arxiv.org/abs/2305.19201">
+            <div class="col-sm-6 col-sm-offset-3 text-center">
+                <ul class="nav nav-pills nav-justified">
+                    <li>
+                        <a href="https://arxiv.org/abs/2305.19201">
                             <img src="./img/paper_image.png" height="60px">
-                                <h4><strong>Paper</strong></h4>
-                            </a>
-                        </li>
-                        <!-- <li>
+                            <h4><strong>Paper</strong></h4>
+                        </a>
+                    </li>
+                    <!-- <li>
                             <a href="https://youtu.be/qrdRH9irAlk">
                             <img src="./img/youtube_icon.png" height="60px">
                                 <h4><strong>Video</strong></h4>
                             </a>
                         </li> -->
-                        <!-- <li>
+                    <!-- <li>
                             <a href="https://storage.googleapis.com/gresearch/refraw360/ref.zip" target="_blank">
                             <image src="img/database_icon.png" height="60px">
                                 <h4><strong>Shiny Dataset</strong></h4>
                             </a>
                         </li>                          -->
-                        <li>
-                            <a href="https://github.com/KU-CVLAB/SE-NeRF" target="_blank">
+                    <li>
+                        <a href="https://github.com/KU-CVLAB/SE-NeRF" target="_blank">
                             <image src="img/github.png" height="60px">
                                 <h4><strong>Code</strong></h4>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div>
+                        <video class="video" id="kplanes" width="50%" loop playsinline autoPlay muted
+                            src="./img/kplanes_subtitle.mp4" onplay="resizeAndPlay(this)"></video>
+                        <!-- <canvas width="150" height="150" class="videoMerge" id="TeaserMerge"></canvas> -->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <video class="video" id="regnerf" width="50%" loop playsinline autoPlay muted
+                            src="./img/RegNeRF_subtitle.mp4" onplay="resizeAndPlay(this)"></video>
+                        <!-- <canvas width="150" height="150" class="videoMerge" id="0758Merge"></canvas> -->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <video class="video" id="ours" width="50%" loop playsinline autoPlay muted
+                            src="./img/Ours_subtitle.mp4" onplay="resizeAndPlay(this)"></video>
+                        <!-- <canvas width="150" height="150" class="videoMerge" id="0781Merge"></canvas> -->
+                    </div>
+                </div>
+                <div class="text-center">
+                    Our results on chair scene of NeRF Synthetic with 3 input views. We provide video comparison with
+                    our
+                    baseline, K-planes.
+                    <br><br>
+
+                </div>
+            </div>
+        </div>
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Overview
+                </h3>
                 <div class="text-center">
                     <img src="./img/main_figure.png" width="100%">
                 </div>
-
+                <br>
                 <div class="text-justify">
-                    SE-NeRF utilizes the teacher-student framework to distill the knowledge of learned 3D geometry from teacher to student. To do this, we apply a separate distillation scheme for reliable and unreliable rays. The process is done in an iterative manner as the student becomes the new teacher.
+                    SE-NeRF utilizes the teacher-student framework to distill the knowledge of learned 3D geometry from
+                    teacher to student. To do this, we apply a separate distillation scheme for reliable and unreliable
+                    rays. The process is done in an iterative manner as the student becomes the new teacher.
                 </div>
             </div>
         </div>
@@ -152,7 +224,21 @@
                     Abstract
                 </h3>
                 <p class="text-justify">
-                    Recently, Neural Radiance Field (NeRF) has shown remarkable performance in 3D reconstruction. However, it still requires abundant high-quality images limiting its applicability in real-world scenarios. To overcome this limitation, recent works have focused on training NeRF with sparse viewpoints. We observe that the quality of rendered images drops sharply despite a few changes in viewpoints due to extreme overfitting to sparse input views. In this paper, we propose a novel framework, SE-NeRF, that applies self-supervised training to NeRF to address these problems. We formulate few-shot NeRF into a teacher-student framework commonly used in self-training for iterative distillation of robust geometry. We introduce a novel reliability estimation method to determine the reliability of pseudo labels obtained by the teacher network, which we proceed to leverage in our distillation process. Our approach distills ray-level pseudo labels using separate distillation schemes for reliable and unreliable rays, enabling NeRF to learn more accurate and robust geometry of the 3D scene. We evaluate our framework qualitatively and quantitatively, which achieves state-of-the-art performance through self-supervision, without relying on external 3D priors for additional guidance, demonstrating the effectiveness of our approach in a few-shot NeRF setting.
+                    Recently, Neural Radiance Field (NeRF) has shown remarkable performance in 3D reconstruction.
+                    However, it still requires abundant high-quality images limiting its applicability in real-world
+                    scenarios. To overcome this limitation, recent works have focused on training NeRF with sparse
+                    viewpoints. We observe that the quality of rendered images drops sharply despite a few changes in
+                    viewpoints due to extreme overfitting to sparse input views. In this paper, we propose a novel
+                    framework, SE-NeRF, that applies self-supervised training to NeRF to address these problems. We
+                    formulate few-shot NeRF into a teacher-student framework commonly used in self-training for
+                    iterative distillation of robust geometry. We introduce a novel reliability estimation method to
+                    determine the reliability of pseudo labels obtained by the teacher network, which we proceed to
+                    leverage in our distillation process. Our approach distills ray-level pseudo labels using separate
+                    distillation schemes for reliable and unreliable rays, enabling NeRF to learn more accurate and
+                    robust geometry of the 3D scene. We evaluate our framework qualitatively and quantitatively, which
+                    achieves state-of-the-art performance through self-supervision, without relying on external 3D
+                    priors for additional guidance, demonstrating the effectiveness of our approach in a few-shot NeRF
+                    setting.
                 </p>
             </div>
         </div>
@@ -163,62 +249,64 @@
                     Methodology
                 </h3>
                 <div class="text-justify">
-                    We distillize the knowledge of the teacher network to the student by applying <b>seperate distillation schemes</b> for reliable and unreliable rays.
-                <div class="text-center">
-                    <img src="./img/Distillation.png" width="100%">
+                    We distillize the knowledge of the teacher network to the student by applying <b>seperate
+                        distillation schemes</b> for reliable and unreliable rays.
+                    <div class="text-center">
+                        <img src="./img/Distillation.png" width="100%">
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Qualitative Results
-                </h3>
-                <div class="text-justify">
-                    Qualitative results of on Synthetic Dataset trained with randomly selected <b>3 input views</b>.
-                </div>
-                <div class="text-center">
-                    <img src="./img/Qualitative_results_of_NeRF_Synthetic_with_3_input_view.png" width="100%">
-                </div>
-                <br>
-                <div class="text-justify">
-                    Qualitative comparisons of on Synthetic Dataset trained with randomly selected <b>3 input views</b>.
-                </div>
-                <div class="text-center">
-                    <img src="./img/Comparions1.png" width="100%">
-                </div>
-                <br>
-                <div class="text-justify">
-                    Qualitative comparisons of on LLFF Dataset trained with randomly selected <b>3 input views</b>.
-                </div>
-                <div class="text-center">
-                    <img src="./img/Comparison2.png" width="100%">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h3>
+                        Qualitative Results
+                    </h3>
+                    <div class="text-justify">
+                        Qualitative results of on Synthetic Dataset trained with randomly selected <b>3 input views</b>.
+                    </div>
+                    <div class="text-center">
+                        <img src="./img/Qualitative_results_of_NeRF_Synthetic_with_3_input_view.png" width="100%">
+                    </div>
+                    <br>
+                    <div class="text-justify">
+                        Qualitative comparisons of on Synthetic Dataset trained with randomly selected <b>3 input
+                            views</b>.
+                    </div>
+                    <div class="text-center">
+                        <img src="./img/Comparions1.png" width="100%">
+                    </div>
+                    <br>
+                    <div class="text-justify">
+                        Qualitative comparisons of on LLFF Dataset trained with randomly selected <b>3 input views</b>.
+                    </div>
+                    <div class="text-center">
+                        <img src="./img/Comparison2.png" width="100%">
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Quantitative Results
-                </h3>
-                <div class="text-justify">
-                    The best-performing results are presented in <b>bold</b>. 
-                </div>
-                <div class="text-center">
-                    <img src="./img/main_qual_nerf.png" width="100%">
-                </div>
-                <br>
-                <div class="text-center">
-                    <img src="./img/main_qual_depth.png" width="100%">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h3>
+                        Quantitative Results
+                    </h3>
+                    <div class="text-justify">
+                        The best-performing results are presented in <b>bold</b>.
+                    </div>
+                    <div class="text-center">
+                        <img src="./img/main_qual_nerf.png" width="100%">
+                    </div>
+                    <br>
+                    <div class="text-center">
+                        <img src="./img/main_qual_depth.png" width="100%">
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- <image src="img/architecture.png" class="img-responsive" alt="overview" width="60%" style="max-height: 450px;margin:auto;"> -->
+            <!-- <image src="img/architecture.png" class="img-responsive" alt="overview" width="60%" style="max-height: 450px;margin:auto;"> -->
 
-        <!-- <div class="row">
+            <!-- <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Video
@@ -231,33 +319,40 @@
             </div>
         </div> -->
 
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Motivation of Self-Supervised Training
-                </h3>
-                <div class="text-justify">
-                    To validate our framework, we show the resulting PSNR values of the rendered images from <span>360&deg;</span> after being trained with 3 images from <span>0&deg;</span>, <span>120&deg;</span>, and <span>240&deg;</span>. We observe that the quality of rendered images drops sharply despite a minor change in viewpoints due to extreme overfitting to sparse input views and show that this problem can be circumvented by applying the self-training framework to NeRF.
-                    <br>
-                    <b>Baseline</b>: Trained with 3 images with the baseline model.
-                    <br>
-                    <b>GT Reliability Mask</b>: Trained with 3 images with self-supervised training applied with ground-truth reliability mask.
-                    <br>
-                    <b>Ours(SE-NeRF)</b>: Trained with 3 images with our proposed self-supervised framework with no ground-truth information. 
-                </div>
-                <div class="text-center">
-                    <img src="./img/motivation_local.png" width="80%">
-                </div>
-                <!-- <div class="text-center">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h3>
+                        Motivation of Self-Supervised Training
+                    </h3>
+                    <div class="text-justify">
+                        To validate our framework, we show the resulting PSNR values of the rendered images from
+                        <span>360&deg;</span> after being trained with 3 images from <span>0&deg;</span>,
+                        <span>120&deg;</span>, and <span>240&deg;</span>. We observe that the quality of rendered images
+                        drops sharply despite a minor change in viewpoints due to extreme overfitting to sparse input
+                        views and show that this problem can be circumvented by applying the self-training framework to
+                        NeRF.
+                        <br>
+                        <b>Baseline</b>: Trained with 3 images with the baseline model.
+                        <br>
+                        <b>GT Reliability Mask</b>: Trained with 3 images with self-supervised training applied with
+                        ground-truth reliability mask.
+                        <br>
+                        <b>Ours(SE-NeRF)</b>: Trained with 3 images with our proposed self-supervised framework with no
+                        ground-truth information.
+                    </div>
+                    <div class="text-center">
+                        <img src="./img/motivation_local.png" width="80%">
+                    </div>
+                    <!-- <div class="text-center">
                     <video id="refdir" width="40%" playsinline autoplay loop muted>
                         <source src="video/reflection_animation.mp4" type="video/mp4" />
                     </video>
                 </div> -->
+                </div>
             </div>
-        </div>
 
 
-<!-- 
+            <!-- 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
@@ -323,20 +418,20 @@
         </div> -->
 
 
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Video
-                </h3>
-                <center>
-                    <p>Coming Soon!</p>
-              <!--       <iframe width="560" height="315" src="https://www.youtube.com/embed/4R4Pi8qWXmo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> -->
-                </center> 
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h3>
+                        Video
+                    </h3>
+                    <center>
+                        <p>Coming Soon!</p>
+                        <!--       <iframe width="560" height="315" src="https://www.youtube.com/embed/4R4Pi8qWXmo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> -->
+                    </center>
+                </div>
             </div>
-        </div>
 
 
-        <!-- <div class="row">
+            <!-- <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Citation
@@ -355,7 +450,7 @@
                 </div>
             </div>
         </div> -->
-<!--             
+            <!--             
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
@@ -375,19 +470,21 @@
             </div>
         </div> -->
 
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Acknowledgements
-                </h3>
-                <p class="text-justify">
-                <!-- We would like to thank Lior Yariv and Kai Zhang for helping us evaluate their methods, and Ricardo Martin-Brualla for helpful comments on our text. DV is supported by the National Science Foundation under Cooperative Agreement PHY-2019786 (an NSF AI Institute, <a href="http://iaifi.org">http://iaifi.org</a>) -->
-                    <!-- <br> -->
-                The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a>.
-                </p>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h3>
+                        Acknowledgements
+                    </h3>
+                    <p class="text-justify">
+                        <!-- We would like to thank Lior Yariv and Kai Zhang for helping us evaluate their methods, and Ricardo Martin-Brualla for helpful comments on our text. DV is supported by the National Science Foundation under Cooperative Agreement PHY-2019786 (an NSF AI Institute, <a href="http://iaifi.org">http://iaifi.org</a>) -->
+                        <!-- <br> -->
+                        The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a>.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
 
 
-</body></html>
+</body>
+
+</html>
