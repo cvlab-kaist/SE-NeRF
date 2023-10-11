@@ -140,7 +140,7 @@
             <div class="col-sm-6 col-sm-offset-3 text-center">
                 <ul class="nav nav-pills nav-justified">
                     <li>
-                        <a href="https://arxiv.org/abs/2305.19201">
+                        <a href="">
                             <img src="./img/paper_image.png" height="60px">
                             <h4><strong>Paper</strong></h4>
                         </a>
@@ -204,27 +204,30 @@
                     Abstract
                 </h3>
                 <p class="text-justify">
-                    Recently, Neural Radiance Field (NeRF) has shown remarkable performance in 3D reconstruction.
-                    However, it still requires abundant high-quality images limiting its applicability in real-world
-                    scenarios. To overcome this limitation, recent works have focused on training NeRF with sparse
-                    viewpoints. We observe that the quality of rendered images drops sharply despite a few changes in
-                    viewpoints due to extreme overfitting to sparse input views. In this paper, we propose a novel
-                    framework, SE-NeRF, that applies self-supervised training to NeRF to address these problems. We
-                    formulate few-shot NeRF into a teacher-student framework commonly used in self-training for
-                    iterative distillation of robust geometry. We introduce a novel reliability estimation method to
-                    determine the reliability of pseudo labels obtained by the teacher network, which we proceed to
-                    leverage in our distillation process. Our approach distills ray-level pseudo labels using separate
-                    distillation schemes for reliable and unreliable rays, enabling NeRF to learn more accurate and
-                    robust geometry of the 3D scene. We evaluate our framework qualitatively and quantitatively, which
-                    achieves state-of-the-art performance through self-supervision, without relying on external 3D
-                    priors for additional guidance, demonstrating the effectiveness of our approach in a few-shot NeRF
-                    setting.
+                    Recently, neural radiance field (NeRF) has shown remarkable performance in
+novel view synthesis and 3D reconstruction. However, it still requires abundant
+high-quality images, limiting its applicability in real-world scenarios. To overcome
+this limitation, recent works have focused on training NeRF only with sparse
+viewpoints by giving additional regularizations, often called few-shot NeRF. We
+observe that due to the under-constrained nature of the task, solely using additional
+regularization is not enough to prevent the model from overfitting to sparse view-
+points. In this paper, we propose a novel framework, dubbed Self-Evolving Neural
+Radiance Fields (SE-NeRF), that applies a self-training framework to NeRF to
+address these problems. We formulate few-shot NeRF into a teacher-student frame-
+work to guide the network to learn a more robust representation of the scene by
+training the student with additional pseudo labels generated from the teacher. By
+distilling ray-level pseudo labels using distinct distillation schemes for reliable and
+unreliable rays obtained with our novel reliability estimation method, we enable
+NeRF to learn a more accurate and robust geometry of the 3D scene. We show and
+evaluate that applying our self-training framework to existing models improves
+the quality of the rendered images and achieves state-of-the-art performance in
+multiple settings.
                 </p>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+            <!-- <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Methodology
                 </h3>
@@ -235,7 +238,7 @@
                         <img src="./img/Distillation.png" width="100%">
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
@@ -258,6 +261,14 @@
                     </div>
                     <div class="text-center">
                         <img src="./img/Comparions1.png" width="100%">
+                    </div>
+                    <br>
+                    <div class="text-center">
+                        <img src="./img/depths_1.png" width="100%">
+                    </div>
+                    <br>
+                    <div class="text-center">
+                        <img src="./img/depths_2.png" width="100%">
                     </div>
                     <br>
                     <div class="text-justify">
@@ -398,17 +409,17 @@
         </div> -->
 
 
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <h3>
                         Video
                     </h3>
                     <center>
                         <p>Coming Soon!</p>
-                        <!--       <iframe width="560" height="315" src="https://www.youtube.com/embed/4R4Pi8qWXmo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> -->
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/4R4Pi8qWXmo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> 
                     </center>
                 </div>
-            </div>
+            </div> -->
 
 
             <!-- <div class="row">
