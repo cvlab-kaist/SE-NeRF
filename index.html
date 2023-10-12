@@ -166,13 +166,12 @@
                 </ul>
             </div>
         </div>
-
         <div class="container">
             <div class="row">
                 <video class="video" id="kplanes" width="50%" loop playsinline autoPlay muted
                     src="./img/kplanes_regnerf_ours.mp4" onplay="resizeAndPlay(this)"></video>
                 <div class="text-center">
-                    Our results on chair scene of NeRF Synthetic with 3 input views. We provide video comparison with
+                    Our results of chair scene on NeRF Synthetic Extereme(3-view). We provide video comparison with
                     our baseline(K-planes) and RegNeRF.
                     <br><br>
 
@@ -205,23 +204,23 @@
                 </h3>
                 <p class="text-justify">
                     Recently, neural radiance field (NeRF) has shown remarkable performance in
-novel view synthesis and 3D reconstruction. However, it still requires abundant
-high-quality images, limiting its applicability in real-world scenarios. To overcome
-this limitation, recent works have focused on training NeRF only with sparse
-viewpoints by giving additional regularizations, often called few-shot NeRF. We
-observe that due to the under-constrained nature of the task, solely using additional
-regularization is not enough to prevent the model from overfitting to sparse view-
-points. In this paper, we propose a novel framework, dubbed Self-Evolving Neural
-Radiance Fields (SE-NeRF), that applies a self-training framework to NeRF to
-address these problems. We formulate few-shot NeRF into a teacher-student frame-
-work to guide the network to learn a more robust representation of the scene by
-training the student with additional pseudo labels generated from the teacher. By
-distilling ray-level pseudo labels using distinct distillation schemes for reliable and
-unreliable rays obtained with our novel reliability estimation method, we enable
-NeRF to learn a more accurate and robust geometry of the 3D scene. We show and
-evaluate that applying our self-training framework to existing models improves
-the quality of the rendered images and achieves state-of-the-art performance in
-multiple settings.
+                    novel view synthesis and 3D reconstruction. However, it still requires abundant
+                    high-quality images, limiting its applicability in real-world scenarios. To overcome
+                    this limitation, recent works have focused on training NeRF only with sparse
+                    viewpoints by giving additional regularizations, often called few-shot NeRF. We
+                    observe that due to the under-constrained nature of the task, solely using additional
+                    regularization is not enough to prevent the model from overfitting to sparse view-
+                    points. In this paper, we propose a novel framework, dubbed Self-Evolving Neural
+                    Radiance Fields (SE-NeRF), that applies a self-training framework to NeRF to
+                    address these problems. We formulate few-shot NeRF into a teacher-student frame-
+                    work to guide the network to learn a more robust representation of the scene by
+                    training the student with additional pseudo labels generated from the teacher. By
+                    distilling ray-level pseudo labels using distinct distillation schemes for reliable and
+                    unreliable rays obtained with our novel reliability estimation method, we enable
+                    NeRF to learn a more accurate and robust geometry of the 3D scene. We show and
+                    evaluate that applying our self-training framework to existing models improves
+                    the quality of the rendered images and achieves state-of-the-art performance in
+                    multiple settings.
                 </p>
             </div>
         </div>
@@ -245,6 +244,26 @@ multiple settings.
                     <h3>
                         Qualitative Results
                     </h3>
+                    <div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <video class="video" id="0758" width="33%" loop playsinline autoPlay muted
+                                    src="./img/hotdog_360.mp4" onplay="resizeAndPlay(this)"></video>
+                                <canvas width="150" height="150" class="videoMerge" id="0758Merge"></canvas>
+                            </div>
+                            <div class="col-md-4">
+                                <video class="video" id="0781" width="33%" loop playsinline autoPlay muted
+                                    src="./img/lego_360.mp4" onplay="resizeAndPlay(this)"></video>
+                                <canvas width="150" height="150" class="videoMerge" id="0781Merge"></canvas>
+                            </div>
+                            <div class="col-md-4">
+                                <video class="video" id="Teaser" width="33%" loop playsinline autoPlay muted
+                                    src="./img/mic_360.mp4" onplay="resizeAndPlay(this)"></video>
+                                <canvas width="150" height="150" class="videoMerge" id="TeaserMerge"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
                     <div class="text-justify">
                         Qualitative results of on Synthetic Dataset trained with NeRF Synthetic Extreme(3-view).
                     </div>
