@@ -168,8 +168,11 @@
         </div>
         <div class="container">
             <div class="row">
-                <video class="video" id="kplanes" width="50%" poster="./img/preview.png" loop playsinline muted controls
-                    src="./img/kplanes_regnerf_ours.mp4"></video>
+                <video class="video" id="kplanes" width="50%" poster="./img/preview.png" loop playsinline muted controls autoplay>
+                    <!-- src="./img/kplanes_regnerf_ours.mp4"> -->
+                    <source src="./img/kplanes_regnerf_ours.webm" type="video/webm">
+                    <source src="./img/kplanes_regnerf_ours.mp4" type="video/mp4">
+                </video>
                 <div class="text-center">
                     Our results of chair scene on NeRF Synthetic Extereme(3-view). We provide video comparison with
                     our baseline(K-planes) and RegNeRF.
@@ -248,17 +251,26 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <video class="video" id="0758" width="33%" loop playsinline autoPlay muted
-                                    src="./img/hotdog_360.mp4" onplay="resizeAndPlay(this)"></video>
+                                     onplay="resizeAndPlay(this)">
+                                    <source src="./img/hotdog_360.webm" type="video/webm">
+                                    <source src="./img/hotdog_360.mp4" type="video/mp4">
+                                </video>
                                 <canvas width="150" height="150" class="videoMerge" id="0758Merge"></canvas>
                             </div>
                             <div class="col-md-4">
                                 <video class="video" id="0781" width="33%" loop playsinline autoPlay muted
-                                    src="./img/lego_360.mp4" onplay="resizeAndPlay(this)"></video>
+                                     onplay="resizeAndPlay(this)">
+                                    <source src="./img/lego_360.webm" type="video/webm">
+                                    <source src="./img/lego_360.mp4" type="video/mp4">
+                                </video>
                                 <canvas width="150" height="150" class="videoMerge" id="0781Merge"></canvas>
                             </div>
                             <div class="col-md-4">
                                 <video class="video" id="Teaser" width="33%" loop playsinline autoPlay muted
-                                    src="./img/mic_360.mp4" onplay="resizeAndPlay(this)"></video>
+                                     onplay="resizeAndPlay(this)">
+                                    <source src="./img/mic_360.webm" type="video/webm">
+                                    <source src="./img/mic_360.mp4" type="video/mp4">
+                                </video>
                                 <canvas width="150" height="150" class="videoMerge" id="TeaserMerge"></canvas>
                             </div>
                         </div>
