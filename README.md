@@ -10,7 +10,7 @@ by [Jaewoo Jung](https://github.com/crepejung00)\*, [Jisang Han](https://github.
 ## Updates
 ### &#9888; Please notice that the code is currently being refactored, so minor bugs or mismatch with the metrics in the original paper might exist. Please feel free to raise any issues and we will fix it as soon as possible!
 
-2024/02/09 : We released our codes for SE-NeRF(K-Planes) on the NeRF Synthetic & NeRF Synthetic Extreme dataset!
+2024/02/09 : We released our codes for <b>SE-NeRF(K-Planes)</b> on the NeRF Synthetic & NeRF Synthetic Extreme dataset!
 
 ## Introduction
 ![](assets/main_architecture.png)
