@@ -5,7 +5,7 @@
 
 This is our official implementation of Self-Evolving Neural Radiance Fields!
 
-by [Jaewoo Jung](https://github.com/crepejung00)\*, [Jisang Han](https://github.com/ONground-Korea)\*, [Jiwon Kang](https://github.com/loggerJK)\*, [Seongchan Kim](https://github.com/deep-overflow), [Min-seop Kwak](https://github.com/mskwak01), [Seungryong Kim](https://cvlab.korea.ac.kr)&dagger;
+by [Jaewoo Jung](https://github.com/crepejung00)\*, [Jisang Han](https://github.com/ONground-Korea)\*, [Jiwon Kang](https://github.com/loggerJK)\*, [Seongchan Kim](https://github.com/deep-overflow), [Min-seop Kwak](https://mskwak01.github.io/), [Seungryong Kim](https://cvlab.korea.ac.kr)&dagger;
 
 ## Updates
 ### &#9888; Please notice that the code is currently being refactored, so minor bugs or mismatch with the metrics in the original paper might exist. Please feel free to raise any issues and we will fix it as soon as possible!
@@ -30,7 +30,7 @@ NeRF Synthetic Dataset(blender) : [Data](https://www.matthewtancik.com/nerf).
 
 ## Training
 
-Currently only kplanes is the supported backbone model!
+Currently only [K-Planes](https://github.com/sarafridov/K-Planes) is the supported backbone model!
 
 To train the model with our framework, all you need to do is:
 
