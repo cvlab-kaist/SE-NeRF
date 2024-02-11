@@ -8,9 +8,9 @@ This is our official implementation of Self-Evolving Neural Radiance Fields!
 by [Jaewoo Jung](https://github.com/crepejung00)\*, [Jisang Han](https://github.com/ONground-Korea)\*, [Jiwon Kang](https://github.com/loggerJK)\*, [Seongchan Kim](https://github.com/deep-overflow), [Min-seop Kwak](https://mskwak01.github.io/), [Seungryong Kim](https://cvlab.korea.ac.kr)&dagger;
 
 ## Updates
-### &#9888; Please notice that the code is currently being refactored, so minor bugs or mismatch with the metrics in the original paper might exist. Please feel free to raise any issues and we will fix it as soon as possible!
+### &#9888; Please notice that the code is currently being refactored, so minor bugs or mismatches with the metrics in the original paper might exist. Please feel free to raise any issues and we will fix it as soon as possible!
 
-2024/02/09 : We released our codes for <b>SE-NeRF(K-Planes)</b> on the NeRF Synthetic & NeRF Synthetic Extreme dataset!
+2024/02/13 : We released our codes for <b>SE-NeRF(K-Planes)</b> on the NeRF Synthetic & NeRF Synthetic Extreme dataset!
 
 ## Introduction
 ![](assets/main_architecture.png)
