@@ -1,5 +1,5 @@
 # SE-NeRF : Self-Evolving Neural Radiance Fields
-<a href="https://arxiv.org/abs/2312.01003"><img src="https://img.shields.io/badge/arXiv-2305.19201-%23B31B1B"></a>
+<a href="https://arxiv.org/abs/2312.01003"><img src="https://img.shields.io/badge/arXiv-2312.01003-%23B31B1B"></a>
 <a href="https://ku-cvlab.github.io/SE-NeRF/ "><img src="https://img.shields.io/badge/Project%20Page-online-brightgreen"></a>
 <br>
 
