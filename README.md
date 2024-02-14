@@ -35,7 +35,7 @@ Currently only [K-Planes](https://github.com/sarafridov/K-Planes) is the support
 To train the model with our framework, all you need to do is:
 
 ```
-python train.py
+python train.py --backbone kplanes
 ```
 
 
